@@ -1,0 +1,201 @@
+<!-- 
+	Project Title: Sahay
+	Author: Ajeeta Dhole
+	Version 1.0 April-May 2014
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+	    <title>Sahay</title>
+	    <meta name="Description" content="Technology solution for bridging the employment gap in the domestic help sector."/>
+	    <meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+	    <link rel="stylesheet" type="text/css" href="css/style-ad.css"/>
+	    
+    	<link href='http://fonts.googleapis.com/css?family=Artifika' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+
+    	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+	    <script src="js/script-ad.js"></script>
+	</head>
+	<body>
+		<div id="mainTopBar">
+			<div class="logo" id="mainLogo">
+				<h1>sahay</h1>
+			</div>
+
+			<div id="searchWrapper">
+			   	<div id="searchContainer">
+					<input type="text" id="search" value="" placeholder="Quick search - eg. maid near Borivali, cook near Malad ... ">	
+					<div class="button" id="searchButton">
+					</div>
+
+					<div class="button" id="postButton">
+						<p>CREATE NEW JOB POST</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div id="profile">
+				<span id="pofilePIC"></span>
+				<h1>Ajeeta Dhole</h1>
+				<span id="downArrow"></span>
+			</div>
+
+			<div id="tabWrapper">
+				<div id="tabContainer">	
+					<a href="matches.html" target="inlineframe"><div class="tab link" id="matchesTab">
+						<p>MATCHED CANDIDATES</p>
+					</div></a>
+					<a href="applicants.html" target="inlineframe"><div class="tab link" id="applicantsTab">
+						<div id="new">
+							<p>1 new</p>
+						</div>
+						<p>JOB APPLICANTS</p>
+					</div></a>
+					<a href="shortlist.html" target="inlineframe"><div class="tab link" id="shortlistsTab">
+						<p>SHORTLIST</p>
+					</div></a>
+					<a href="jobs.html" target="inlineframe"><div class="tab link" id="postingsTab">
+						<p>MY JOB POSTINGS</p>
+					</div></a>
+				</div>
+			</div>
+		
+		</div>
+
+		<div id="pageContent">
+			<div id="sidebar">
+				<ul id="menuList">
+					<li class="menuItem"><p>Filter candidates by:</p></li>
+					<li class="menuHeader"><h2>JOB TYPE</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="radio" name="job" id="maidJob" value="maid" checked><label class="menuItemLabel" for="maidJob">Maid (29)</label></li>
+					<li class="menuItem"><input type="radio" name="job" id="cookJob" value="cook"><label class="menuItemLabel" for="cookJob">Cook (9)</label></li>
+					<li class="menuItem"><input type="radio" name="job" id="caretakerJob" value="caretaker"><label class="menuItemLabel" for="caretakerJob">Caretaker (6)</label></li>
+					
+					<li class="menuHeader"><h2>GENDER</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="checkbox" name="sex" id="femaleGender" value="female" checked="checked"><label class="menuItemLabel" for="femaleGender">Female (29)</label></li>
+					<li class="menuItem"><input type="checkbox" name="sex" id="maleGender" value="male"><label class="menuItemLabel" for="maleGender">Male (10)</label></li>
+					
+					<li class="menuHeader"><h2>TIME</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="checkbox" name="time" id="morningTime" value="morning" checked><label class="menuItemLabel" for="morningTime">8 AM - 12 noon (16)</label></li>
+					<li class="menuItem"><input type="checkbox" name="time" id="afternoonTime" value="afternoon" checked><label class="menuItemLabel" for="afternoonTime">12 noon - 3 PM (13)</label></li>
+					<li class="menuItem"><input type="checkbox" name="time" id="eveningTime" value="evening"><label class="menuItemLabel" for="eveningTime">3 PM - 6 PM (34)</label></li>
+					<li class="menuItem"><input type="checkbox" name="time" id="nightTime" value="night"><label class="menuItemLabel" for="nightTime">6 PM - 9 PM (20)</label></li>
+					
+					<li class="menuHeader"><h2>LANGUAGES</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="marathi" value="marathi" checked><label class="menuItemLabel" for="marathi">Marathi (25)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="hindi" value="hindi" checked><label class="menuItemLabel" for="hindi">Hindi (20)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="gujarati" value="gujarati"><label class="menuItemLabel" for="gujarati">Gujarati (16)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="tamil" value="tamil"><label class="menuItemLabel" for="tamil">Tamil (9)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="telugu" value="telugu"><label class="menuItemLabel" for="telugu">Telugu (8)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="kannada" value="kannada"><label class="menuItemLabel" for="kannada">Kannada (5)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="english" value="english"><label class="menuItemLabel" for="english">English (3)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="bengali" value="bengali"><label class="menuItemLabel" for="bengali">Bengali (1)</label></li>
+					
+					<li class="menuHeader"><h2>EXPERIENCE</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="checkbox" name="experience" id="noviceExperience" value="novice" checked><label class="menuItemLabel" for="noviceExperience">0 - 2 years (25)</label></li>
+					<li class="menuItem"><input type="checkbox" name="experience" id="intermediateExperience" value="intermediate" checked><label class="menuItemLabel" for="intermediateExperience">2 - 5 years (20)</label></li>
+					<li class="menuItem"><input type="checkbox" name="experience" id="advanceExperience" value="advanced"><label class="menuItemLabel" for="advanceExperience">More than 5 years (19)</label></li>
+				</ul> 
+		    </div>
+		    
+		    <div id="feedWrapper">
+		       	<div id="feedContainer">
+		    		<iframe id="frame" name="inlineframe" src="matches.html" frameborder="0" scrolling="no" overflow="hidden"></iframe>
+				</div>
+		    </div>
+
+		    <div class="footer link" id="mainFooter">
+				<ul>
+					<li><p>Contact us</p></li>
+					<li><p>Terms of service</p></li>
+					<li><p>Privacy Policy</p></li>
+					<li><p>Site Map</p></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="modalWrapper">
+			
+			<div id="candidatePreferencesModal">
+				<div class="modalContent">
+					<span class="button modalClose">&#215;</span>
+					<h1>Create a new job posting</h1>
+					<div>
+						<p id="jobTypeInput" class="candidatePreferencesForm">I need a
+						<input type="radio" name="job" id="maid" value="maid"><label class="menuItemLabel" for="maid">Maid</label>
+						<input type="radio" name="job" id="cook" value="cook"><label class="menuItemLabel" for="cook">Cook</label>
+						<input type="radio" name="job" id="caretaker" value="caretaker"><label class="menuItemLabel" for="caretaker">Caretaker</label>
+						</p>
+
+						<p id="taskInput" class="candidatePreferencesForm disabled">to 
+						<input type="checkbox" name="task" id="clothes" value="clothes"><label for="clothes">Wash clothes</label> 
+						<input type="checkbox" name="task" id="utensils" value="utensils"><label for="utensils">Wash utensils</label> 
+						<input type="checkbox" name="task" id="mop" value="mop"><label for="mop">Mop and sweep</label> 
+						</p>
+
+						<p id="hoursInput" class="candidatePreferencesForm disabled">for 
+						<input type="text" id="hours" value="" placeholder="eg. 3"/><label for="hours">hours daily</label> 
+						</p> 
+
+						<p id="wageInput" class="candidatePreferencesForm disabled">I'll pay, per month, Rs. 
+						<input type="text" id="wage" value="" placeholder="eg. 1000"/><label for="wage">People in your area pay an average of Rs. 1000 for these tasks.</label> 
+						</p>
+
+						<p id="postalInput" class="candidatePreferencesForm disabled">My postal code is
+						<input type="text" id="postalCode" value="" placeholder="eg. 400081"/><label for="postalCode"></label> 
+						</p>
+
+						<h2 class="disabled">Optional Preferences</h2>
+
+		                <p id="genderInput" class="candidatePreferencesForm disabled">I prefer someone who is  
+		                <input type="checkbox" name="gender" id="female" value="female"><label for="female">Female</label>
+						<input type="checkbox" name="gender" id="male" value="male"><label for="male">Male</label>
+						</p>
+
+						<p id="timeInput" class="candidatePreferencesForm disabled">is available to work between  
+		                <input type="checkbox" name="availability" id="morning" value="morning"><label for="morning">8 AM - 12 noon</label> 
+						<input type="checkbox" name="availability" id="afternoon" value="afternoon"><label for="afternoon">12 noon - 3 PM</label> 
+						<input type="checkbox" name="availability" id="evening" value="evening"><label for="evening">3 PM - 6 PM</label>
+						<input type="checkbox" name="availability" id="night" value="night"><label for="night">6 PM - 9 PM</label> 
+						</p>
+		                    
+		                <p id="timeInput" class="candidatePreferencesForm disabled">has work experience of 
+		                <input type="checkbox" name="experience" id="novice" value="novice"><label for="novice">0 - 2 years</label> 
+						<input type="checkbox" name="experience" id="intermediate" value="intermediate"><label for="intermediate">2 - 5 years</label> 
+						<input type="checkbox" name="experience" id="experienced" value="experienced"><label for="experienced">More than 5 years</label>
+						</p>
+
+						<p id="timeInput" class="candidatePreferencesForm disabled"> and speaks  
+		                <input type="text" id="language" value="" placeholder="eg. Hindi, Marathi"/><label for="language">
+		                </p>
+
+		            </div>
+				</div>
+							
+				<div class="base" id="postJobBase">
+					<a href="jobsSuccess.html" target="inlineframe">
+						<div class="button disabled modalButton candidatePreferencesButton" id="postJobButton">
+							<p>POST JOB</p>
+						</div>
+					</a>
+					<a href="jobs.html" target="inlineframe">
+						<div class="button modalButton modalCancelButton">
+							<p>CANCEL</p>
+						</div>
+					</a>
+				</div>
+
+			</div>
+					
+		</div>
+
+	</body>
+</html>

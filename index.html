@@ -1,0 +1,139 @@
+<!-- 
+	Project Title: Sahay
+	Author: Ajeeta Dhole
+	Version 1.0 April-May 2014
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+	    <title>Sahay</title>
+	    <meta name="Description" content="Technology solution for bridging the employment gap in the domestic help sector."/>
+	    <meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+	    <link rel="stylesheet" type="text/css" href="css/style-ad.css"/>
+
+    	<link href='http://fonts.googleapis.com/css?family=Artifika' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+	    <script src="js/script-ad.js"></script>
+	</head>
+	<body>
+		<div id="landingBackground">
+			<div id="landingWrapper">
+				<div class="logo" id="landingLogo">
+					<h1>sahay<h1>
+				</div>
+
+				<div class="button" id="landingTopButtons">
+					<ul>
+						<li><p>VIEW PRICING PLANS</p></li>
+						<li><p>SIGN IN</p></li>
+					</ul>
+				</div>
+
+				<div id="tagline">
+					<p>Trusted local maids, cooks, and</p>
+					<p>caretakers at your fingertips</p>
+				</div>
+
+				<div id="landingValueProp">
+					<p>Quickly find and connect with trusted domestic workers in your </p>
+					<p>area who match your needs.</p>
+				</div>
+
+				<div class="button" id="getStartedButton">
+					<p>PREVIEW CANDIDATES FOR FREE</p>
+				</div>
+			</div>
+			
+			<div class="footer link" id="landingFooter">
+				<ul>
+					<li><p>How it works</p></li>
+					<li><p>Contact us</p></li>
+					<li><p>Terms of service</p></li>
+					<li><p>Privacy</p></li>
+				</ul>
+			</div>
+
+			<div class="modalWrapper">
+			
+				<div id="candidatePreferencesModal">
+					<div class="modalContent">
+						<span class="button modalClose">&#215;</span>
+						<h1>Tell us what you need</h1>
+						<div>
+							<p id="jobTypeInput" class="candidatePreferencesForm">I need a
+								<input type="radio" name="job" id="maid" value="maid"><label class="menuItemLabel" for="maid">Maid</label>
+								<input type="radio" name="job" id="cook" value="cook"><label class="menuItemLabel" for="cook">Cook</label>
+								<input type="radio" name="job" id="caretaker" value="caretaker"><label class="menuItemLabel" for="caretaker">Caretaker</label>
+							</p>
+
+							<p id="taskInput" class="candidatePreferencesForm disabled">to 
+								<input type="checkbox" name="task" id="clothes" value="clothes"><label for="clothes">Wash clothes</label> 
+								<input type="checkbox" name="task" id="utensils" value="utensils"><label for="utensils">Wash utensils</label> 
+								<input type="checkbox" name="task" id="mop" value="mop"><label for="mop">Mop and sweep</label> 
+							</p>
+
+								<p id="hoursInput" class="candidatePreferencesForm disabled">for 
+								<input type="text" id="hours" value="" placeholder="eg. 3"/><label for="hours">hours daily</label> 
+							</p> 
+
+							<p id="wageInput" class="candidatePreferencesForm disabled">I'll pay, per month, Rs. 
+								<input type="text" id="wage" value="" placeholder="eg. 1000"/><label for="wage">People in your area pay an average of Rs. 1000 for these tasks.</label> 
+							</p>
+
+							<p id="postalInput" class="candidatePreferencesForm disabled">My postal code is
+								<input type="text" id="postalCode" value="" placeholder="eg. 400081"/><label for="postalCode"></label> 
+							</p>
+
+							<h2 class="disabled">Optional Preferences</h2>
+
+			                <p id="genderInput" class="candidatePreferencesForm disabled">I prefer someone who is  
+			                	<input type="checkbox" name="gender" id="female" value="female"><label for="female">Female</label>
+								<input type="checkbox" name="gender" id="male" value="male"><label for="male">Male</label>
+							</p>
+
+							<p id="timeInput" class="candidatePreferencesForm disabled">is available to work between  
+				                <input type="checkbox" name="availability" id="morning" value="morning"><label for="morning">8 AM - 12 noon</label> 
+								<input type="checkbox" name="availability" id="afternoon" value="afternoon"><label for="afternoon">12 noon - 3 PM</label> 
+								<input type="checkbox" name="availability" id="evening" value="evening"><label for="evening">3 PM - 6 PM</label>
+								<input type="checkbox" name="availability" id="night" value="night"><label for="night">6 PM - 9 PM</label> 
+							</p>
+			                    
+			                <p id="timeInput" class="candidatePreferencesForm disabled">has work experience of 
+				                <input type="checkbox" name="experience" id="novice" value="novice"><label for="novice">0 - 2 years</label> 
+								<input type="checkbox" name="experience" id="intermediate" value="intermediate"><label for="intermediate">2 - 5 years</label> 
+								<input type="checkbox" name="experience" id="experienced" value="experienced"><label for="experienced">More than 5 years</label>
+							</p>
+
+							<p id="timeInput" class="candidatePreferencesForm disabled"> and speaks  
+			                	<input type="text" id="language" value="" placeholder="eg. Hindi, Marathi"/><label for="language">
+			                </p>
+
+			            </div>
+					</div>
+								
+					<div class="base" id="postJobBase">
+						<a href="mainSignedOut.html">
+							<div class="button disabled modalButton candidatePreferencesButton" id="previewCandidatesButton">
+								<p>PREVIEW CANDIDATES</p>
+							</div>
+						</a>
+						<a href="index.html">
+							<div class="button modalButton modalCancelButton">
+								<p>CANCEL</p>
+							</div>
+						</a>
+					</div>
+
+				</div>
+						
+			</div>
+		</div>
+			
+			
+	</body>
+</html>

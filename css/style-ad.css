@@ -1,0 +1,1415 @@
+/*	Project Title: Sahay
+	Author: Ajeeta Dhole
+	Version 1.0 April-May 2014
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+
+body {
+	line-height:1;
+}
+
+ol, ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content:'';
+	content:none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+body {
+	background:#dedede;
+	font-family:'Ubuntu', sans-serif;
+	font-size:14px;
+	font-weight:300;
+	color: #546678;
+}
+
+label {
+	cursor:pointer;
+}
+
+input[type=text] {
+    border: 1px #dedede solid; 
+    border-radius: 2px;
+   	padding:9px;
+   	height:18px;
+   	margin:0 7px 0 5px;
+    background: #fff;
+	display:inline-block;
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	font-size: 14px;
+	color: #546678;
+	font-weight: 100;
+	font-family:'Ubuntu', sans-serif;
+}
+
+input[type=text]:hover {
+    border: 1px #7fc8e7 solid; 
+    color: #7fc8e7;
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+}
+
+input[type=text] + label {
+	font-size: 14px;
+	color: #546678;
+}
+
+input[type=checkbox] + label {
+	padding-left: 3px;
+	font-size: 14px;
+	color: #546678;
+}
+
+input[type=checkbox] {
+	margin-right:5px;
+	margin-left:15px;
+}
+
+input[type=checkbox] + label:hover {
+	color: #2a333c;
+  	font-weight:400;
+}
+
+input[type=checkbox]:checked + label {
+  	color: #2a333c;
+  	font-weight:400;
+}
+
+input[type=radio] {
+	margin-right:5px;
+	margin-left:15px;
+}
+
+input[type=radio] + label {
+	padding-left: 3px;
+	font-size: 14px;
+	color: #546678;
+}
+
+input[type=radio] + label:hover {
+	color: #2a333c;
+  	font-weight:400;
+}
+
+input[type=radio]:checked + label {
+  	color: #2a333c;
+  	font-weight:400;
+}
+
+.button{
+	cursor:pointer;
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+}
+
+.button:hover{
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+}
+
+.link{
+	cursor:pointer;
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+}
+
+.link:hover{
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+}
+
+.logo {
+	width:250px;
+	float:left;
+}
+
+.logo h1{
+	font-family:'Artifika', serif;
+	font-size:44px;
+	color:#95b7ca;
+	text-align:left;
+}
+
+/*********************************************************************************/
+/* Landing Page                                                                  */
+/*********************************************************************************/
+#landingBackground {
+	background-color:#dedede;
+	background-image:url('landingBlueAlt1.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:relative;
+	top:0;
+	left:0;
+}
+
+#landingWrapper {
+	width:630px;
+	position:absolute;
+	top:19px;
+	left:80px;
+	overflow:hidden;
+}
+
+#landingLogo h1{
+	color:#95b7ca;
+	margin:-1px 0 53px 0;
+}
+
+#landingTopButtons li{
+	border:solid 1px #95b7ca;
+	border-radius:3px;
+	padding:13px;
+	margin-left:20px;
+	float:right;
+	margin-top:4px;
+}
+
+#landingTopButtons li:hover { 
+	border:solid 1px #fff;
+	background:rgba(255, 255, 255, 0.1);
+}
+
+#landingTopButtons li p {
+	text-align:center;
+	color:#95b7ca;
+	letter-spacing:1px;
+}
+
+#tagline {
+	width:100%;
+	float:left;
+	background:#49c5b1;
+	color:#fff;
+	padding:20px 25px 25px 30px;
+	font-family:'Roboto Slab', serif;
+	text-align:left;
+	font-size:38px;
+	font-weight: 100;
+	line-height:54px;
+}
+
+#landingValueProp {
+	width:100%;
+	float:left;
+	background:rgba(255,255,255,0.1);
+	color:#99a4ad;
+	padding:22px 25px 25px 30px;
+	text-align:left;
+	font-size:20px;
+	line-height:34px;
+}
+
+#getStartedButton {
+	background:#c43b33;
+	border-radius:2px;
+	border-bottom:solid 4px #a7261f;
+	padding:30px 30px 26px 30px;
+	float:left;
+	margin-top:50px;
+}
+
+#getStartedButton:hover { 
+	background: #e14a29;
+}
+
+#getStartedButton p {
+	text-align:center;
+	color:#f6dfde;
+	font-size:18px;
+	letter-spacing:2px;
+	word-spacing:5px;
+}
+
+.footer {
+	position:absolute;
+	bottom:0;
+	overflow:hidden;
+}
+
+.footer li{
+	display:inline-block;
+}
+
+.footer p{
+	margin:0 20px 30px 0;
+}
+
+#landingFooter {
+	width:520px;
+	left:80px;
+}
+
+#landingFooter p{
+	color:#95b7ca;
+}
+
+#landingFooter p:hover{
+	color:#fff;
+}
+
+/*********************************************************************************/
+/* Main Page                                                                     */
+/*********************************************************************************/
+
+/*********************************************************************************/
+/* Top Bar                                                                       */
+/*********************************************************************************/
+#mainTopBar {
+	height:98px;
+	position:fixed;
+	background: #fff;
+	top:0;
+	left:0;
+	box-shadow: 0px 0px 1px #ccc;
+	z-index: 500;
+	width:100%;
+}
+
+#mainLogo h1{
+	color:#49c5b1;
+	padding: 22px 0 0 30px;
+}
+
+#searchWrapper {
+	float:left;
+	width: 65%;
+}
+
+#searchContainer {
+	width: 700px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+#search {
+	width:390px;
+	height:20px;
+	margin:10px 0 5px 0;
+	float:left;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+#searchButton {
+	background-image:url('search.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:76px;
+	height:38px;
+	margin: 10px 0 0 -1px;
+	float:left;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border: 1px solid #ccc;
+}
+
+#searchButton:hover { 
+	background-image:url('searchHover.png');
+}
+
+#searchButton p {
+	color: #777;
+}
+
+#postButton {
+	background: #f35757;
+	padding: 12px;
+	margin: 10px 0 0 -30px;
+	float:left;
+	border-radius: 2px;
+	border: 1px solid #d02e2e;
+	float:right;
+}
+
+#postButton:hover { 
+	background: #e98468;
+}
+
+#postButton p {
+	text-align: center;
+	color: #f9e7e7;
+	letter-spacing: 0.75px;
+	word-spacing: 2px;
+}
+
+#profile {
+	float:left;
+	width:15%;
+	cursor:pointer;
+}
+
+#pofilePIC {
+	background-image:url('profile.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:38px;
+	height:38px;
+	margin: 10px 0 0 0;
+	float:left;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+#downArrow {
+	background-image:url('arrow.png');
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:15px;
+	height:15px;
+	margin: 21px 0 0 2px;
+	float:left;
+}
+
+#profile h1 {
+	text-align: right;
+	margin: 21px 3px 0 8px;
+	display: inline-block;
+	font-weight: 400;
+	color:#2a333c;
+	float:left;
+}
+
+#profile p {
+	margin: 15px 5px 0 0;
+	text-align: right;
+	display: inline-block;
+	font-size: 10px;
+}
+
+#tabWrapper {
+	background: #fff;
+	height:30px;
+	width:65%;
+	float:left;
+	margin-top: 5px;
+}
+
+#tabContainer {
+	width: 700px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.tab {
+	padding: 0 3px 8px 3px;
+	margin-right: 30px;
+	float:left;
+	margin-top: 13px;
+	opacity:0.75;
+	position:relative;
+}
+
+.tab p{
+	text-align: center;
+	color: #3e8dbe;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	word-spacing: 3px;
+}
+
+#matchesTab {
+	border-bottom: solid 3px #3e8dbe;
+	opacity:1;
+}
+
+#matchesSignedOutTab {
+	border-bottom: solid 3px #3e8dbe;
+	opacity:1;
+	pointer-events:none;
+}
+
+#postingsTab {
+	float:right;
+	margin-right: 0;
+}
+
+#new {
+	background: #f35757;
+	padding:2px;
+	border-radius: 1px;
+	position: absolute;
+	top:-17px;
+	right:-10px;
+	opacity:1;
+}
+
+#new p{
+	font-size: 11px;
+	color:#fff;
+	text-align: center;
+	color: #f9e7e7;
+	font-weight: 400;
+
+}
+
+/*********************************************************************************/
+/* Side Bar                                                                      */
+/*********************************************************************************/
+#pageContent {
+	width:100%;
+	position:relative;
+	top:98px;
+	left:0;
+	z-index: 100;
+}
+
+#sidebar {
+	width:250px;
+	background: #fff;
+	opacity:1;
+	float:left;
+	box-shadow: 0px 0px 1px #ccc;
+	height:1110px;
+}
+
+.menuHeader {
+	background: #edf4fa;
+	border-top: solid 1px #c9dde9;
+	border-bottom: solid 1px #c9dde9;
+	padding: 6px;
+	overflow:hidden;
+}
+
+.menuHeader h2{
+	color: #3e8dbe;
+	font-weight: 400;
+	padding-left: 26px;
+	line-height: 22px;
+	float:left;
+	letter-spacing: 1px;
+		word-spacing: 3px;
+}
+
+.menuHeader p{
+	color: #3e8dbe;
+	padding: 0 10px 0 16px;
+	line-height: 22px;
+	float:right;
+	font-size: 11px;
+	font-weight: 400;
+	cursor:pointer;
+}
+
+.menuHeader p:hover{
+	text-decoration: underline;
+}
+
+.menuItem {
+	display: block;
+	padding: 6px 6px 6px 40px;
+	line-height: 22px;
+}
+
+.menuItem p{
+	margin-left: -8px;
+	line-height: 24px;
+	opacity:1;
+}
+
+/*********************************************************************************/
+/* Content Feed                                                                  */
+/*********************************************************************************/
+#feedWrapper {
+	float:left;
+	width: 65%;
+}
+
+#feedContainer {
+	width: 700px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.pageTitle {
+	width:100%;
+	font-size: 22px;
+	color:#419c97;
+	margin-top: 33px;
+	font-family: 'Roboto Slab', serif;
+	line-height: 32px;
+}
+
+.helpMessage {
+	width:75%;
+	font-size: 16px;
+	margin-top: 14px;
+	line-height: 26px;
+}
+
+#frame {
+	background:#fff;
+	width:100%;
+	height:3100px;
+}
+
+.candidate {
+	background:#fff;
+	box-shadow: 0px 0px 1px #ccc;
+	width:100%;
+	padding:25px;
+	margin-top:15px;
+	overflow:hidden;
+	position:relative;
+}
+
+.ribbonWrapper {
+  	width: 85px;
+  	height: 88px;
+  	overflow: hidden;
+  	position: absolute;
+  	top: 0;
+  	right: 50px;
+}
+
+.ribbonMessage {
+	font-size: 12px;
+	font-weight: 400;
+  	color: #fff;
+  	letter-spacing: 0.5px;
+  	text-align: center;
+  	-webkit-transform: rotate(45deg);
+  	-moz-transform:    rotate(45deg);
+  	-ms-transform:     rotate(45deg);
+  	-o-transform:      rotate(45deg);
+  	position: relative;
+  	padding: 7px 0;
+  	left: -5px;
+  	top: 15px;
+  	width: 120px;
+  	background: #f4c255;
+}
+
+.candidateHeader {
+	width:100%;
+	float:left;
+}
+
+.candidateHeader h1 {
+	font-size:23px;
+	color:#2a333c;
+	font-weight:400;
+	float:left;
+	margin-bottom:10px;
+	margin-right:10px;
+}
+
+.star {
+	float:left;
+	width:15px;
+	height:15px;
+	margin-left:1px;
+}
+
+.filledStar {
+	background-image:url('filledStar.png');
+}
+
+.emptyStar {
+	background-image:url('emptyStar.png');
+}
+
+.actionIcon {
+	float:left;
+	width:18px;
+	height:18px;
+	margin-top: 17px;
+}
+
+.review {
+	background-image:url('review.png');
+	margin-right: 3.5px;
+}
+
+.message {
+	background-image:url('audio.png');
+	margin-right: 6px;
+}
+
+.delete {
+	background-image:url('delete.png');
+	margin: 17.5px 5px 0 55px;
+}
+
+.backgroundCheck {
+	background-image:url('screen.png');
+	margin: 17.5px 5px 0 55px;
+}
+
+.actionLinks  {
+	float:left;
+	margin: 20px 20px 0 0;
+	word-spacing: 1px;
+	color: #3e8dbe;
+	font-weight: 400;
+}
+
+.actionLinks:hover {
+	text-decoration:underline
+}
+
+.candidateBody {
+	width:100%;
+	float:left;
+	overflow:hidden;
+	line-height: 25px;
+	word-spacing: 3px;
+	font-size: 15px;
+}
+
+.params {
+	width:20%;
+	float:left;
+	margin-top:10px;
+	font-size: 15px;
+	color: #7f8d9c;
+	line-height: 26px;
+}
+
+.info {
+	width:47%;
+	float:left;
+	margin-top:10px;
+	font-size: 15px;
+	font-weight: 00;
+	color: #2a333c;
+	line-height: 26px;
+}
+
+.actionButtons {
+	width:30%;
+	float:left;
+	margin-top:10px;
+}
+
+.feedButton {
+	width:115px;
+	margin:6.5px;
+	padding: 12px 3px 12px 3px;
+	display: inline-block;
+	border-radius: 1px;
+	z-index: 400;
+}
+
+.feedButton p {
+	text-align: center;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	font-size: 13.5px;
+}
+
+.shortlistButton {
+	background: #4bc96e;
+	border:1px solid #31ae54;
+}
+
+.shortlistButton:hover { 
+	background: #64de86;
+}
+
+.shortlistButton p {
+	color: #eff7f0;
+}
+
+.shortlisted {
+	width:115px;
+	margin:6.5px;
+	padding: 12px 3px 12px 3px;
+	border: 1px solid #4bc96e;
+	border-radius: 1px;
+	z-index: 100;
+	display:none;
+	cursor:default;
+}
+
+.shortlisted p {
+	text-align: center;
+	color: #31ae54;
+	font-weight: 400;
+}
+
+.phoneButton {
+	background: #4a9fb3;
+	border: 1px solid #28869c;
+}
+
+.phoneButton:hover { 
+	background: #5abcca;
+}
+
+.phoneButton p {
+	color: #ecf7f9;
+}
+
+.phoneNumber {
+	width:115px;
+	margin:6.5px;
+	padding: 12px 3px 12px 3px;
+	border: 1px solid #4a9fb3;
+	border-radius: 1px;
+	z-index: 100;
+	display:none;
+	cursor:default;
+}
+
+.phoneNumber p {
+	text-align: center;
+	color: #28869c;
+	font-weight: 400;
+}
+
+.editButton {
+	background: #dedede;
+	border: 1px solid #ccc;
+}
+
+.editButton:hover { 
+	background: #eee;
+}
+
+.editButton p {
+	color: #777;
+}
+
+.removeButton {
+	background: #dedede;
+	border: 1px solid #ccc;
+}
+
+.removeButton:hover { 
+	background: #eee;
+}
+
+.removeButton p {
+	color: #777;
+}
+
+.deleteButton {
+	background: #dedede;
+	border: 1px solid #ccc;
+}
+
+.deleteButton:hover { 
+	background: #eee;
+}
+
+.deleteButton p {
+	color: #777;
+}
+
+.contactsRemaining {
+	width:250px;
+	margin:-20px 6.5px 0 -60px;
+	z-index: 100;
+	display:none;
+	cursor:default;
+}
+
+.contactsRemaining p {
+	color:#d02e2e;
+	font-weight: 400;
+}
+
+.warningMessage {
+	width:100%;
+	float:left;
+	display:none;
+	opacity:0;
+}
+
+.warningMessage h1 {
+	font-size: 16px;
+	color:#d02e2e;
+	font-weight: 400;
+}
+
+.warningMessage h1:hover {
+	color:#ea4e4e;
+}
+
+.successMessage {
+	width:88%;
+	float:left;
+	background: #4bc96e;
+	padding:15px;
+	margin-bottom: 25px;
+}
+
+.successMessage p {
+	color: #fff;
+	float:left;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/*********************************************************************************/
+/* Preferences Modal                                                                */
+/*********************************************************************************/
+.modalWrapper{
+	background: rgba(0,0,0,0.8);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 800;
+	opacity:0;
+	display:none;
+}
+
+#candidatePreferencesModal {
+	background:#fff;
+	width:700px;
+	top:20px;
+	border-radius: 3px;
+	z-index: 900;
+	box-shadow: 1px 1px 3px #222;
+	padding:25px;
+	position:absolute;
+	opacity:1;
+	display:block;
+}
+
+.candidatePreferencesForm input[type=text] {
+   	width:200px;
+   	height:12px;
+   	margin: -5px 7px -5px 5px;
+   	font-size: 14px;
+	color: #546678;
+	font-weight: 100;
+	font-family:'Ubuntu', sans-serif;
+}
+
+#hoursInput input[type=text] {
+	width:30px;
+}
+
+#wageInput input[type=text] {
+	width:55px;
+}
+
+#wageInput input[type=text] + label {
+	color:#31ae54;
+}
+
+#postalInput input[type=text] {
+	width:70px;
+}
+
+.modalClose {
+	width:18px;
+	height:18px;
+	padding:17px 32px 0 0;
+	color: #ccc;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	position:absolute;
+	top: 0;
+	right: 0;
+    z-index: 900;
+}
+
+.modalClose:hover {
+	color:#555;
+}
+
+.modalContent h1 {
+	font-size: 22px;
+	font-weight: 400;
+	text-align: left;
+	color:#2a333c;
+	margin-bottom: 12px;
+	padding-bottom: 25px;
+	width:680px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #dedede;
+	z-index: 900;
+}
+
+.modalContent p {
+	padding:14px 0 14px 0;
+	text-align: left;
+	width:680px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.modalContent h2 {
+	padding:20px 0 14px 0;
+	text-align: left;
+	width:680px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 16px;
+	font-weight: 400;
+	color: #2a333c;
+}
+
+
+#hoursInput {
+	display:none;
+}
+
+.disabled {
+	opacity:0.2;
+	pointer-events: none;
+}
+
+.base {
+	background:#eee;
+	height:63px;
+	bottom:-82px;
+	left:0;
+	padding:11px;
+	border-top: 1px solid #ddd;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	position:absolute;
+	overflow:hidden;
+	z-index: 900;
+	width:728px;
+}
+
+.base a {
+	text-decoration: none;
+}
+
+.modalButton{
+	padding: 13px;
+	margin: 10px 10px 0 10px;
+	float:left;
+	border-radius: 2px;
+	float:right;
+}
+
+.modalButton p {
+	text-align: center;
+	color: #fff;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+}
+
+.modalCancelButton {
+	background: #dedede;
+	border: 1px solid #ccc;
+}
+
+.modalCancelButton:hover { 
+	background: #eee;
+}
+
+.modalCancelButton p {
+	color: #777;
+}
+
+.candidatePreferencesButton {
+	background: #f35757;
+	border: 1px solid #d02e2e;
+}
+
+.candidatePreferencesButton:hover {
+	background: #e98468;
+}
+
+.candidatePreferencesButton p{
+	color:#f9e7e7;
+}
+
+/*********************************************************************************/
+/* Signed-Out Page                                                   */
+/*********************************************************************************/
+
+#postSignedOutButton {
+	background: #f35757;
+	padding: 12px;
+	margin: 10px 0 0 -30px;
+	float:left;
+	border-radius: 2px;
+	border: 1px solid #d02e2e;
+	float:right;
+}
+
+#postSignedOutButton:hover { 
+	background: #e98468;
+}
+
+#postSignedOutButton p {
+	text-align: center;
+	color: #f9e7e7;
+	letter-spacing: 0.75px;
+	word-spacing: 2px;
+}
+
+#signInButton {
+	background: #dedede;
+	padding: 12px;
+	margin: 10px 0 0 -10px;
+	float:left;
+	border-radius: 2px;
+	border: 1px solid #ccc;
+}
+
+#signInButton:hover { 
+	background: #eee;
+}
+
+#signInButton p {
+	text-align: center;
+	color: #777;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+}
+
+.actionSignedOutButtons {
+	width:30%;
+	float:left;
+	margin-top:10px;
+}
+
+.shortlistSignedOutButton {
+	background: #4bc96e;
+	border:1px solid #31ae54;
+}
+
+.shortlistSignedOutButton:hover { 
+	background: #64de86;
+}
+
+.shortlistSignedOutButton p {
+	color: #eff7f0;
+}
+
+.phoneSignedOutButton {
+	background: #4a9fb3;
+	border: 1px solid #28869c;
+}
+
+.phoneSignedOutButton:hover { 
+	background: #5abcca;
+}
+
+.phoneSignedOutButton p {
+	color: #ecf7f9;
+}
+
+/*********************************************************************************/
+/* Sign-Up-Nudge Hovercard                                                       */
+/*********************************************************************************/
+.signUpNudgeHoverCard {
+	background:#fff;
+	width:300px;
+	border-radius: 2px;
+	border: 1px solid #eee;
+	z-index: 900;
+	box-shadow: 2px 2px 2px #ccc;
+	padding:15px;
+	position:absolute;
+	opacity:0;
+	display: none;
+}
+
+.hoverCardContent h1 {
+	font-size: 17px;
+	font-weight: 400;
+	text-align: left;
+	color:#2a333c;
+	margin-bottom: 12px;
+	padding-bottom: 15px;
+	width:290px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #dedede;
+	z-index: 900;
+}
+
+.hoverCardContent p {
+	font-size: 13.5px;
+	padding:6px 0 6px 0;
+	text-align: left;
+	width:290px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 22px;
+}
+
+.hoverCardLink {
+	font-size: 13.5px;
+	padding:6px 0 6px 0;
+	text-align: left;
+	width:290px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 22px;
+	word-spacing: 1px;
+	color: #3e8dbe;
+	font-weight: 400;
+}
+
+.hoverCardLink:hover {
+	text-decoration:underline
+}
+
+.hoverCardBase {
+	background:#eee;
+	width:308px;
+	height:46px;
+	bottom:-68px;
+	left:-1px;
+	padding:11px;
+	border: 1px solid #eee;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	position:absolute;
+	overflow:hidden;
+	z-index: 900;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+.hoverCardBase a {
+	text-decoration: none;
+}
+
+.hoverCardBaseText {
+	text-decoration: none;
+	font-size: 12px;
+	margin: 17px 0 0 10px;
+}
+
+.hoverCardButton{
+	padding: 8px;
+	margin: 8px;
+	border-radius: 2px;
+	float:right;
+}
+
+.hoverCardButton p {
+	text-align: center;
+	color: #fff;
+	letter-spacing: 0.5px;
+	font-size: 13px;
+	float:right;
+}
+
+.hoverCardSecondaryButton {
+	background: #dedede;
+	border: 1px solid #ccc;
+}
+
+.hoverCardSecondaryButton:hover { 
+	background: #eee;
+}
+
+.hoverCardSecondaryButton p {
+	color: #777;
+}
+
+.hoverCardPrimaryButton {
+	background: #00b9dc;
+	border: 1px solid #03a4c3;
+}
+
+.hoverCardPrimaryButton:hover {
+	background: #1ecff1;
+}
+
+.hoverCardPrimaryButton p{
+	color:#e6f4f7;
+}
+
+/*********************************************************************************/
+/* Sign-Up Modal                                                                */
+/*********************************************************************************/
+#signUpModalWrapper{
+	background: rgba(0,0,0,0.8);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 800;
+	opacity:0;
+	display:none;
+}
+
+#signUpModal {
+	background:#fff;
+	width:700px;
+	top:20px;
+	border-radius: 3px;
+	z-index: 900;
+	box-shadow: 1px 1px 3px #222;
+	padding:25px;
+	position:absolute;
+	opacity:0;
+}
+
+.signUpForm input[type=text] {
+   	width:300px;
+   	height:12px;
+   	margin: 4px 0 4px 5px;
+   	font-size: 14px;
+	color: #546678;
+	font-weight: 100;
+	font-family:'Ubuntu', sans-serif;
+}
+
+.signUpForm input[type="password"] {
+   	width:300px;
+   	height:12px;
+   	margin: 4px 0 4px 5px;
+   	font-size: 14px;
+	color: #546678;
+	font-weight: 100;
+	font-family:'Ubuntu', sans-serif;
+}
+
+.signUpForm input[type=checkbox] {
+   	margin-left: 0;
+}
+
+#signUpButton {
+	background: #f35757;
+	border: 1px solid #d02e2e;
+}
+
+#signUpButton:hover {
+	background: #e98468;
+}
+
+#signUpButton p{
+	color:#f9e7e7;
+}
+
+/*********************************************************************************/
+/* Payments Modal                                                                */
+/*********************************************************************************/
+#paymentsModalWrapper{
+	background: rgba(0,0,0,0.8);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 800;
+	opacity:0;
+	display:none;
+}
+
+#paymentsModal {
+	background:#fff;
+	width:700px;
+	top:20px;
+	border-radius: 3px;
+	z-index: 900;
+	box-shadow: 1px 1px 3px #222;
+	padding:25px;
+	position:absolute;
+	opacity:0;
+}
+
+#paymentsModal h2{
+	margin-top: 15px;
+}
+
+.paymentsForm input[type=text] {
+   	width:300px;
+   	height:12px;
+   	margin: 4px 0 4px 5px;
+   	font-size: 14px;
+	color: #546678;
+	font-weight: 100;
+	font-family:'Ubuntu', sans-serif;
+}
+
+.paymentsForm input[type="password"] {
+   	width:300px;
+   	height:12px;
+   	margin: 4px 0 4px 5px;
+   	font-size: 14px;
+	color: #546678;
+	font-weight: 100;
+	font-family:'Ubuntu', sans-serif;
+}
+
+.paymentsForm input[type=checkbox] {
+   	margin-left: 0;
+}
+
+#expiryInput input[type=text] {
+	width:70px;
+}
+
+#securityInput input[type=text] {
+	width:70px;
+}
+
+#postalCodeInput input[type=text] {
+	width:70px;
+}
+
+#paymentsButton {
+	background: #f35757;
+	border: 1px solid #d02e2e;
+}
+
+#paymentsButton:hover {
+	background: #e98468;
+}
+
+#paymentsButton p{
+	color:#f9e7e7;
+}
