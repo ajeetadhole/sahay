@@ -1,0 +1,143 @@
+     <!-- 
+	Project Title: Sahay
+	Author: Ajeeta Dhole
+	Version 1.0 April-May 2014
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+	    <title>Sahay</title>
+	    <meta name="Description" content="Technology solution for bridging the employment gap in the domestic help sector."/>
+	    <meta name="viewport" content="width = device-width, initial-scale=1.0"/>
+	    <link rel="stylesheet" type="text/css" href="css/style-ad.css"/>
+	    
+    	<link href='http://fonts.googleapis.com/css?family=Artifika' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+
+    	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+	    <script src="js/script-ad.js"></script>
+	</head>
+	<body>
+		<div id="mainTopBar">
+			<div class="logo" id="mainLogo">
+			</div>
+
+			<div id="searchWrapper">
+			   	<div id="searchContainer">
+					<input type="text" id="search" value="" placeholder="Quick search - eg. maid near Borivali, cook near Malad ... ">	
+					<div class="button" id="searchButton">
+					</div>
+
+					<div class="button" id="postSignedOutButton">
+						<p>CREATE NEW JOB POST</p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="button" id="signInButton">
+				<a href="mainSignedIn.html"><p>SIGN IN</p></a>
+			</div>
+
+			<div id="tabWrapper">
+				<div id="tabContainer">	
+					<a href="matches.html" target="inlineframe"><div class="tab link" id="matchesSignedOutTab">
+						<p>MATCHED CANDIDATES</p>
+					</div></a>
+					<a href="applicants.html" target="inlineframe"><div class="disabled tab link" id="applicantsTab">
+						<p>JOB APPLICANTS</p>
+					</div></a>
+					<a href="noShortlist.html" target="inlineframe"><div class="disabled tab link" id="shortlistsTab">
+						<p>SHORTLIST</p>
+					</div></a>
+					<a href="jobs.html" target="inlineframe"><div class="disabled tab link" id="postingsTab">
+						<p>JOB POSTINGS</p>
+					</div></a>
+				</div>
+			</div>
+		
+		</div>
+
+		<div id="pageContent">
+			<div id="sidebar">
+				<ul id="menuList">
+					<li class="menuItem"><p>Filter candidates by:</p></li>
+					<li class="menuHeader"><h2>JOB TYPE</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="radio" name="job" id="maidJob" value="maid" checked><label class="menuItemLabel" for="maidJob">Maid (29)</label></li>
+					<li class="menuItem"><input type="radio" name="job" id="cookJob" value="cook"><label class="menuItemLabel" for="cookJob">Cook (9)</label></li>
+					<li class="menuItem"><input type="radio" name="job" id="caretakerJob" value="caretaker"><label class="menuItemLabel" for="caretakerJob">Caretaker (6)</label></li>
+					
+					<li class="menuHeader"><h2>GENDER</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="checkbox" name="sex" id="femaleGender" value="female" checked="checked"><label class="menuItemLabel" for="femaleGender">Female (29)</label></li>
+					<li class="menuItem"><input type="checkbox" name="sex" id="maleGender" value="male"><label class="menuItemLabel" for="maleGender">Male (10)</label></li>
+					
+					<li class="menuHeader"><h2>TIME</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="checkbox" name="time" id="morningTime" value="morning" checked><label class="menuItemLabel" for="morningTime">8 AM - 12 noon (16)</label></li>
+					<li class="menuItem"><input type="checkbox" name="time" id="afternoonTime" value="afternoon" checked><label class="menuItemLabel" for="afternoonTime">12 noon - 3 PM (13)</label></li>
+					<li class="menuItem"><input type="checkbox" name="time" id="eveningTime" value="evening"><label class="menuItemLabel" for="eveningTime">3 PM - 6 PM (34)</label></li>
+					<li class="menuItem"><input type="checkbox" name="time" id="nightTime" value="night"><label class="menuItemLabel" for="nightTime">6 PM - 9 PM (20)</label></li>
+					
+					<li class="menuHeader"><h2>LANGUAGES</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="marathi" value="marathi"><label class="menuItemLabel" for="marathi">Marathi (25)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="hindi" value="hindi" checked><label class="menuItemLabel" for="hindi">Hindi (20)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="gujarati" value="gujarati"><label class="menuItemLabel" for="gujarati">Gujarati (16)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="tamil" value="tamil"><label class="menuItemLabel" for="tamil">Tamil (9)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="telugu" value="telugu"><label class="menuItemLabel" for="telugu">Telugu (8)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="kannada" value="kannada"><label class="menuItemLabel" for="kannada">Kannada (5)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="english" value="english"><label class="menuItemLabel" for="english">English (3)</label></li>
+					<li class="menuItem"><input type="checkbox" name="language" id="bengali" value="bengali"><label class="menuItemLabel" for="bengali">Bengali (1)</label></li>
+					
+					<li class="menuHeader"><h2>EXPERIENCE</h2><p>Clear Filters</p></li>
+					<li class="menuItem"><input type="checkbox" name="experience" id="noviceExperience" value="novice" checked><label class="menuItemLabel" for="noviceExperience">0 - 2 years (25)</label></li>
+					<li class="menuItem"><input type="checkbox" name="experience" id="intermediateExperience" value="intermediate" checked><label class="menuItemLabel" for="intermediateExperience">2 - 5 years (20)</label></li>
+					<li class="menuItem"><input type="checkbox" name="experience" id="advanceExperience" value="advanced"><label class="menuItemLabel" for="advanceExperience">More than 5 years (19)</label></li>
+				</ul> 
+		    </div>
+		    
+		    <div id="feedWrapper">
+		       	<div id="feedContainer">
+		    		<iframe id="frame" name="inlineframe" src="matchesSignedOut.html" frameborder="0" scrolling="no" overflow="hidden"></iframe>
+				</div>
+		    </div>
+
+		    <div class="footer link" id="mainFooter">
+				<ul>
+					<li><p>Contact us</p></li>
+					<li><p>Terms of service</p></li>
+					<li><p>Privacy Policy</p></li>
+					<li><p>Site Map</p></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="signUpNudgeHoverCard" id="postCard">
+            <div class="hoverCardContent">
+                <h1>Ready to post job?</h1>
+                <div>
+                    <p>Sign up for our premium package to post a job and contact up to thirty candidates.</p>
+                    <p class="link hoverCardLink">View pricing plans.</p>
+                </div>
+            </div>
+                        
+            <div class="hoverCardBase">
+            	<a href="signUp.html" target="_top">
+                	<div class="button hoverCardButton hoverCardPrimaryButton">
+                    	<p>BUY PLAN</p>
+                	</div>
+                </a>
+
+                <div class="button hoverCardButton hoverCardSecondaryButton">
+                    <p>CANCEL</p>
+                </div>
+
+            </div>
+        </div>
+
+	</body>
+</html>
