@@ -71,7 +71,7 @@ label {
 	cursor:pointer;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
     border: 1px #dedede solid; 
     border-radius: 2px;
    	padding:9px;
@@ -79,10 +79,10 @@ input[type=text] {
    	margin:0 7px 0 5px;
     background: #fff;
 	display:inline-block;
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-ms-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 	font-size: 14px;
 	color: #546678;
 	font-weight: 100;
@@ -92,10 +92,10 @@ input[type=text] {
 input[type=text]:hover {
     border: 1px #7fc8e7 solid; 
     color: #7fc8e7;
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-ms-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 
 input[type=text] + label {
@@ -147,44 +147,50 @@ input[type=radio]:checked + label {
 
 .button{
 	cursor:pointer;
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-ms-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 
 .button:hover{
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-ms-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 
 .link{
 	cursor:pointer;
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-ms-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 
 .link:hover{
-	-webkit-transition: all .15s ease-in-out;
-	-moz-transition: all .15s ease-in-out;
-	-ms-transition: all .15s ease-in-out;
-	-o-transition: all .15s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 
 .logo {
-	width:250px;
+	width:130px;
+	height:65px;
 	float:left;
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
-.logo h1{
-	font-family:'Artifika', serif;
-	font-size:44px;
-	color:#95b7ca;
-	text-align:left;
+#landingLogo {
+	background-image:url('sahayLogoBlue.svg');
+	margin: -15px 0 40px -2px;
+}
+
+#mainLogo {
+	background-image:url('sahayLogo.svg');
+	margin: 8px 90px 0 30px;
 }
 
 /*********************************************************************************/
@@ -201,7 +207,7 @@ input[type=radio]:checked + label {
 }
 
 #landingWrapper {
-	width:630px;
+	width:670px;
 	position:absolute;
 	top:19px;
 	left:80px;
@@ -213,21 +219,47 @@ input[type=radio]:checked + label {
 	margin:-1px 0 53px 0;
 }
 
-#landingTopButtons li{
+#landingTopButton li{
 	border:solid 1px #95b7ca;
 	border-radius:3px;
-	padding:13px;
-	margin-left:20px;
+	padding:15px;
+	margin-left:15px;
 	float:right;
-	margin-top:4px;
+	margin-top:8px;
 }
 
-#landingTopButtons li:hover { 
+#landingTopButton li:hover { 
 	border:solid 1px #fff;
 	background:rgba(255, 255, 255, 0.1);
 }
 
-#landingTopButtons li p {
+#landingTopButton li p {
+	text-align:center;
+	color:#95b7ca;
+	letter-spacing:1px;
+}
+
+#landingTopButton li a {
+	text-decoration: none;
+}
+
+
+#landingTopButton ul li p:hover { 
+	color:#d1e4ee
+}
+
+#landingTopLink li{
+	padding:20px;
+	margin-left:-4px;
+	float:right;
+	margin-top:4px;
+}
+
+#landingTopLink li p:hover { 
+	color:#d1e4ee
+}
+
+#landingTopLink li p {
 	text-align:center;
 	color:#95b7ca;
 	letter-spacing:1px;
@@ -263,7 +295,7 @@ input[type=radio]:checked + label {
 	border-bottom:solid 4px #a7261f;
 	padding:30px 30px 26px 30px;
 	float:left;
-	margin-top:50px;
+	margin-top:40px;
 }
 
 #getStartedButton:hover { 
@@ -282,6 +314,8 @@ input[type=radio]:checked + label {
 	position:absolute;
 	bottom:0;
 	overflow:hidden;
+	width:520px;
+	left:80px;
 }
 
 .footer li{
@@ -289,20 +323,20 @@ input[type=radio]:checked + label {
 }
 
 .footer p{
-	margin:0 20px 30px 0;
+	margin:0 17.5px 20px 0;
 }
 
-#landingFooter {
-	width:520px;
-	left:80px;
-}
-
-#landingFooter p{
+.landingFooter {
 	color:#95b7ca;
 }
 
-#landingFooter p:hover{
-	color:#fff;
+.landingFooter:hover{
+	color:#d1e4ee;
+}
+
+#imageCourtesy {
+	color:#3f6c86;
+	cursor:auto;
 }
 
 /*********************************************************************************/
@@ -535,7 +569,7 @@ input[type=radio]:checked + label {
 	line-height: 22px;
 	float:left;
 	letter-spacing: 1px;
-		word-spacing: 3px;
+	word-spacing: 3px;
 }
 
 .menuHeader p{
@@ -921,8 +955,8 @@ input[type=radio]:checked + label {
 	box-shadow: 1px 1px 3px #222;
 	padding:25px;
 	position:absolute;
-	opacity:1;
-	display:block;
+	opacity:0;
+	display:none;
 }
 
 .candidatePreferencesForm input[type=text] {
@@ -993,7 +1027,7 @@ input[type=radio]:checked + label {
 
 
 .modalContent h2 {
-	padding:20px 0 14px 0;
+	padding:15px 0 14px 0;
 	text-align: left;
 	width:680px;
 	margin-left: auto;
@@ -1076,6 +1110,13 @@ input[type=radio]:checked + label {
 /*********************************************************************************/
 /* Signed-Out Page                                                   */
 /*********************************************************************************/
+.showModalWrapper{
+	background: rgba(0,0,0,0.8);
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 800;
+}
 
 #postSignedOutButton {
 	background: #f35757;
@@ -1116,6 +1157,14 @@ input[type=radio]:checked + label {
 	color: #777;
 	letter-spacing: 1px;
 	word-spacing: 3px;
+}
+
+#signInButton a {
+	text-align: center;
+	color: #777;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	text-decoration: none;
 }
 
 .actionSignedOutButtons {
@@ -1277,41 +1326,20 @@ input[type=radio]:checked + label {
 /*********************************************************************************/
 /* Sign-Up Modal                                                                */
 /*********************************************************************************/
-#signUpModalWrapper{
-	background: rgba(0,0,0,0.8);
-	position:absolute;
-	top:0;
-	left:0;
-	z-index: 800;
-	opacity:0;
-	display:none;
-}
-
 #signUpModal {
 	background:#fff;
 	width:700px;
 	top:20px;
 	border-radius: 3px;
-	z-index: 900;
+	z-index: 1200;
 	box-shadow: 1px 1px 3px #222;
 	padding:25px;
 	position:absolute;
-	opacity:0;
 }
 
-.signUpForm input[type=text] {
+.signUpForm input[type=text], input[type=password] {
    	width:300px;
-   	height:12px;
-   	margin: 4px 0 4px 5px;
-   	font-size: 14px;
-	color: #546678;
-	font-weight: 100;
-	font-family:'Ubuntu', sans-serif;
-}
-
-.signUpForm input[type="password"] {
-   	width:300px;
-   	height:12px;
+   	height:18px;
    	margin: 4px 0 4px 5px;
    	font-size: 14px;
 	color: #546678;
@@ -1339,26 +1367,17 @@ input[type=radio]:checked + label {
 /*********************************************************************************/
 /* Payments Modal                                                                */
 /*********************************************************************************/
-#paymentsModalWrapper{
-	background: rgba(0,0,0,0.8);
-	position:absolute;
-	top:0;
-	left:0;
-	z-index: 800;
-	opacity:0;
-	display:none;
-}
-
 #paymentsModal {
 	background:#fff;
 	width:700px;
 	top:20px;
 	border-radius: 3px;
-	z-index: 900;
+	z-index: 1100;
 	box-shadow: 1px 1px 3px #222;
 	padding:25px;
 	position:absolute;
 	opacity:0;
+	display:none;
 }
 
 #paymentsModal h2{
@@ -1366,16 +1385,6 @@ input[type=radio]:checked + label {
 }
 
 .paymentsForm input[type=text] {
-   	width:300px;
-   	height:12px;
-   	margin: 4px 0 4px 5px;
-   	font-size: 14px;
-	color: #546678;
-	font-weight: 100;
-	font-family:'Ubuntu', sans-serif;
-}
-
-.paymentsForm input[type="password"] {
    	width:300px;
    	height:12px;
    	margin: 4px 0 4px 5px;
