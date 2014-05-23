@@ -184,13 +184,13 @@ input[type=radio]:checked + label {
 }
 
 #landingLogo {
-	background-image:url('sahayLogoBlue.svg');
-	margin: -15px 0 40px -2px;
+	background-image:url('sahayLogoBlue.png');
+	margin: -8px 0 35px -2px;
 }
 
 #mainLogo {
-	background-image:url('sahayLogo.svg');
-	margin: 8px 90px 0 30px;
+	background-image:url('sahayLogo.png');
+	margin: 15px 90px 0 30px;
 }
 
 /*********************************************************************************/
@@ -198,7 +198,7 @@ input[type=radio]:checked + label {
 /*********************************************************************************/
 #landingBackground {
 	background-color:#dedede;
-	background-image:url('landingBlueAlt1.png');
+	background-image:url('landingBlueOverlay.png');
 	background-size:cover;
 	background-repeat:no-repeat;
 	position:relative;
@@ -207,7 +207,7 @@ input[type=radio]:checked + label {
 }
 
 #landingWrapper {
-	width:670px;
+	width:630px;
 	position:absolute;
 	top:19px;
 	left:80px;
@@ -934,7 +934,7 @@ input[type=radio]:checked + label {
 }
 
 /*********************************************************************************/
-/* Preferences Modal                                                                */
+/* Preferences Modal                                                             */
 /*********************************************************************************/
 .modalWrapper{
 	background: rgba(0,0,0,0.8);
@@ -1037,6 +1037,10 @@ input[type=radio]:checked + label {
 	color: #2a333c;
 }
 
+#modalMessage {
+	color: #d02e2e;
+}
+
 
 #hoursInput {
 	display:none;
@@ -1108,7 +1112,7 @@ input[type=radio]:checked + label {
 }
 
 /*********************************************************************************/
-/* Signed-Out Page                                                   */
+/* Signed-Out Page                                                               */
 /*********************************************************************************/
 .showModalWrapper{
 	background: rgba(0,0,0,0.8);
@@ -1324,7 +1328,7 @@ input[type=radio]:checked + label {
 }
 
 /*********************************************************************************/
-/* Sign-Up Modal                                                                */
+/* Sign-Up Modal                                                                 */
 /*********************************************************************************/
 #signUpModal {
 	background:#fff;
